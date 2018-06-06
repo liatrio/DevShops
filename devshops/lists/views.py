@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the list index.")
+def home(request):
+    context = locals()
+    template = 'home.html'
+    return render(request, template, context)
