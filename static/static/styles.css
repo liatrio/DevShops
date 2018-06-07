@@ -1,0 +1,42 @@
+body {
+	background: dimgrey;
+	font-family: 'Oswald', 'Futura', sans-serif;
+}
+#wrapper {
+	margin-top: 10% !important;
+}
+#content {
+	background: rgba(38, 178, 31, 1);;
+	padding: 30px;
+	text-
+}
+h1{
+	font-size: 80px;
+	text-align: center;
+	padding-top: 0;
+}
+.t10 {
+	margin-top: 10px;
+}
+.t20 {
+	margin-top: 20px;
+}
+.todo-completed {
+	text-decoration: line-through;
+	background: lightgray;
+}
+footer {
+	margin-top: 20px;
+	color: white;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+}
+.glyphicon-trash {
+  content: "\2709";
+}

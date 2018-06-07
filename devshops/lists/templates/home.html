@@ -1,17 +1,33 @@
-{% block content %}
+{% load static %}
 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DevShops</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="static/css/flatly.min.css" />
+		<link rel="stylesheet" href="static/styles.css" />
+
+	</head>
 	<body>
+
 		<div class="container-fluid" id="wrapper">
 
 			<div class="row">
-				<div class="col-lg-4 col-lg-offset-4" id="content">
-					<h2>WHAT DO YOU WANT TO DO TODAY?</h2>
+				<div class="col-lg-8 col-lg-offset-2" id="content">
+					<h1>Office Supplies</h1>
 
 					<form action="#" method="POST" role="form">
 
 						<div class="form-group">
 							<div class="input-group">
-							  <input type="text" class="form-control" placeholder="Enter todo e.g. Delete junk files" aria-label="Todo" aria-describedby="add-btn">
+							  <input type="text" class="form-control" placeholder="Enter some stuff in" aria-label="Todo" aria-describedby="add-btn">
 							  <span class="input-group-btn">
 								  <button type="submit" class="btn btn-default" id="add-btn">ADD</button>
 							  </span>
@@ -37,9 +53,13 @@
 					</div>
 
 					<ul class="list-group t20">
-						<li class="list-group-item">Create my new awesome website.</li>
-						<li class="list-group-item todo-completed">Attend weekly coding session.</li>
-						<li class="list-group-item">Visit the gym.</li>
+						{% for list in my_list %}
+							{% if list.complete %}
+								<li class="list-group-item todo-completed">{{ list.text }}</li>
+								{% else %}
+								<a href="#"><li class="list-group-item">{{ list.text }}</li></a>
+								{% endif %}
+						{% endfor %}
 					</ul>
 				</div>
 			</div>
@@ -47,5 +67,4 @@
 		</div>
 
 	</body>
-
-{% endblock %}
+</html>

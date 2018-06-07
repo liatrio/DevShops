@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'lists',
-    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +127,7 @@ if DEBUG:
     STATICFILES_DIRS = (
     os.path.join(os.path.dirname(BASE_DIR), "static", "static"),
     )
+
+
+#print ("Base Dir is at:",BASE_DIR)
+#print ("Static Dir is at:",STATICFILES_DIRS)
