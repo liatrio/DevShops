@@ -1,0 +1,56 @@
+body {
+	background: dimgrey;
+	font-family: 'Oswald', 'Futura', sans-serif;
+}
+#wrapper {
+	margin-top: 10% !important;
+	padding-bottom: 100px;
+}
+#content {
+	background: rgba(38, 178, 31, 1);;
+	padding: 30px;
+	text-
+}
+h1{
+	font-size: 80px;
+	text-align: center;
+	padding-top: 0;
+}
+h2{
+	font-size: 160px;
+	color: rgb(39, 174, 36);
+	text-align: center;
+	padding-top: 0;
+	text-shadow: 5px 3px black;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.bottomright {
+    position: absolute;
+    bottom: -130px;
+    right: -70px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.t10 {
+	margin-top: 10px;
+}
+.t20 {
+	margin-top: 20px;
+}
+.todo-completed {
+	text-decoration: line-through;
+	background: lightgray;
+}
+footer {
+	margin-top: 20px;
+	color: white;
+}
