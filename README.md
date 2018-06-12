@@ -1,4 +1,4 @@
 # DevShops
 Application for a grocery/office supplies list at the Chico Liatrio office for day to day needs
 
-in the overall Devshops folder, use the following to be in correct environment: source ds_env/bin/activate
+Be sure to be in a virtual environment before running the server on localhost
